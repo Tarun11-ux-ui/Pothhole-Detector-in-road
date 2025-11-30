@@ -1,0 +1,94 @@
+🕳️ Pothole Detection System using OpenCV | For Municipal Corporation & Smart Vehicles
+
+This repository contains a Python-based Pothole Detection System designed for deployment in municipal corporation vehicles, road inspection units, and smart transportation systems.
+
+The system processes video frames in real-time, uses OpenCV for image operations, NumPy for matrix processing, and time module for performance measurement.
+It can be integrated into government surveillance vehicles to automatically detect potholes on roads and generate alerts.
+
+🚀 Features
+✔ Real-Time Pothole Detection
+
+Works on live webcam feed or pre-recorded road videos
+
+Uses thresholding, contour detection, and edge detection techniques
+
+Marks pothole regions with bounding boxes
+
+✔ Lightweight & Fast
+
+No heavy deep-learning model required
+
+Optimized using OpenCV + NumPy
+
+Works well on low-power devices (Raspberry Pi, laptops in vehicles)
+
+✔ Modular & Extensible
+
+Easy to integrate with:
+
+GPS modules
+
+Municipal dashboards
+
+Embedded systems
+
+Cloud reporting tools
+
+✔ Practical Use Case
+
+Designed specifically for:
+
+Municipal road inspection vehicles
+
+Smart city infrastructure systems
+
+Automatic road-maintenance alert systems
+
+🛠️ Technologies Used
+Component	Purpose
+Python	Core implementation
+OpenCV (cv2)	Image and video processing
+NumPy	Pixel-level operations and filtering
+Time module	FPS calculation and performance tracking
+📂 Project Structure
+Pothole-Detection/
+│── pothole_detection.py
+│── sample_videos/
+│── README.md
+│── requirements.txt
+└── utils/
+    └── filters.py (optional)
+
+⚙️ How It Works
+1. Frame Capture
+
+The system captures video frames using:
+
+cv2.VideoCapture(0) for live camera
+
+Or a video file path
+
+2. Preprocessing
+
+Each frame is processed using:
+
+Grayscale conversion
+
+Gaussian blur
+
+Edge detection (Canny)
+
+Thresholding for dark pothole regions
+
+🎯 Output Example
+
+Potholes highlighted with rectangles
+
+FPS displayed on the frame
+
+Real-time detection
+
+
+3. Contour Detection
+
+Contours representing potholes are extracted using:
